@@ -1,0 +1,39 @@
+{
+  "name": "cy_api_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serverest",
+    "cy:open": "npx cypress open",
+    "cy:dash": "npx cypress run --record --key b75045a6-30e6-4a30-bf49-c9fccaa422e3", 
+    "cy:run": "npx cypress run",
+    "cy:report": "npx mochawesome-merge ./mochawesome-report/mochawesome*.json  > mochawesome-report/report.json && npx marge mochawesome-report/report.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiocaraujo/cy_api_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiocaraujo/cy_api_lab/issues"
+  },
+  "homepage": "https://github.com/fabiocaraujo/cy_api_lab#readme",
+  "dependencies": {
+    "cypress": "^6.8.0",
+    "cypress-tags": "^0.0.21",
+    "faker": "^5.5.2",
+    "joi": "^17.4.0",
+    "ls": "^0.2.1",
+    "rimraf": "^3.0.2",
+    "yargs": "^13.3.2"
+  },
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}
