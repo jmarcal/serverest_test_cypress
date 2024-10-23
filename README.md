@@ -1,42 +1,29 @@
-# Cypress - API - Serverest
-## Projeto de exemplo na API Serverest
+# Cypress - API - Front - Serverest
+## Projeto de exemplo na API e Front Serverest
 
 ### Serverest:
 
-O ServeRest é um servidor REST que simula uma loja virtual com intuito de servir de material de estudos de testes de API.
-
-Essa página documenta todas as rotas e como acessá-las: https://serverest.dev/ 
+Essa página documenta todas as rotas e como acessá-las: https://serverest.dev/
+Essa página dá acesso ao front da aplicação: https://front.serverest.dev/login
 
 Para mais detalhes do ServeRest (como executar localmente, etc) acesse o GitHub do projeto.
 Github: https://github.com/ServeRest/ServeRest
 
-## Cenários de Testes automatizados
+## Cenários de Testes automatizados - Front
 
-#### PRODUTOS
-    ✓ Validar contrato de Produtos - SCHEMA
+#### CADASTRO
+    ✓ CT001 - Realizar o cadastro com sucesso
 
-    ✓ Deve listar os produtos cadastrados - GET
+    ✓ CT002 - Realizar o cadastro com e-mail já cadastrado
 
-    ✓ Deve inserir um produto novo - POST
+    ✓ CT003 - Realizar login com sucesso
 
-    ✓ Deve inserir um produto novo - POST via AppActions
+####  Cenários de Testes automatizados - API
+    ✓ CT001 - Deve realizar o cadastro do produto com sucesso
 
-    ✓ Deve validar mensagem de erro ao cadastrar produto repetido - POST
+    ✓ CT001 - Deve realizar o cadastro com sucesso
 
-    ✓ Deve alterar um produto cadastrado previamente - PUT
-
-####  USUÁRIOS
-    ✓ Deve validar o esquema do contrato - SCHEMA
-
-    ✓ Deve listar todos os usuários cadastrado - GET
-
-    ✓ Deve cadastrar usuário com sucesso - POST
-
-    ✓ Deve cadastrar usuário com sucesso - POST via AppActions
-
-    ✓ Deve alterar o usuário cadastrado previamente - PUT
-
-    ✓ Deve deletar usuário cadastrado previamente - DELETE
+    ✓ CT001 - Deve realizar login com sucesso
 
 
 ## Clonando e executando em sua máquina
@@ -52,10 +39,8 @@ Github: https://github.com/ServeRest/ServeRest
 
 Via terminal, rode os seguintes comandos:
 ```  
-git clone https://github.com/fabiocaraujo/cy_api_serverest.git
+git clone https://github.com/jmarcal/serverest_test_cypress.git
 ```
-```
-cd cy_api_serverest
 ```
 
 #### Para instalar as dependencias:
@@ -82,31 +67,13 @@ IMPORTANTE: Não feche o terminal com a execução do Serverest enquanto estiver
 npx cypress run
 ```
 
-#### Para executarVia Dashboard
+#### Para executar no front
 ```
 npx cypress open 
 ```
-Após abrir o dasboard, clique na opção "Running integration tests" para rodar todos os testes.
-
-
-### Gerando relatórios
-
-```
-npm run cy:report  
-```
-
-Deve criar um arquivo "cypress/mochawesome-report/report.html. Basta abrir o arquivo com seu navegador preferido.
-
-
-### Bibliotecas de apoio:
+### Materiais de apoio:
 -Cypress: Framework de automação: https://cypress.io/
 
--Faker: Biblioteca para geração de massa de dados: https://www.npmjs.com/package/faker
-
--Mochawesome Report, para geração de relatórios: https://www.npmjs.com/package/mochawesome 
-
-### Boa diversão ;) 
-Qualquer crítica ou sugestão é bem vinda! 
 
 
 
